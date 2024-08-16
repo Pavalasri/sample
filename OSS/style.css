@@ -1,0 +1,125 @@
+.nav-main{
+    width: 100%;
+    background-color:rgb(217, 202, 233);
+    display: inline-block;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+div{
+    float: right;
+}
+.nav-main img{
+    width: 12%;
+}
+.nav-sec ul {
+    display: flex;
+}
+.nav-sec ul li{
+    list-style-type: none;
+    margin-right: 20px;
+    display: flex;
+    font-family: verdana;
+    align-items: center;
+}
+.nav-sec ul li a{
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 20px;
+    color:#2E2B69;
+}
+.nav-sec ul li a:hover{
+        color:rgb(154, 8, 239);
+}
+.nav-sec ul li button{
+    border: none;
+    background-color: #ebc1f0;
+    border-radius: 10px;
+    padding: 0px;
+    color: #2E2B69;
+    cursor: pointer;
+}
+         
+         
+.nav-sec ul li button{
+    background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
+    margin: 10px;
+    margin-right: 0px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .nav-sec ul li button:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+
+.carousel-inner{
+margin: auto; /* Center the carousel */
+   width: 100%;
+}	  
+.carousel-caption {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+text-align: center;
+}
+.carousel-caption h1 {
+font-size: 60px;
+font-family:serif;
+margin: 0;
+}
+.carousel-caption p {
+font-size: 24px;
+font-family: 'Courier New', Courier, monospace;
+}
+.carousel-caption a {
+border: none;
+background-color: #09000a;
+border-radius: 10px;
+padding: 10px;
+color: #605adb;
+cursor: pointer;
+/*background-image: linear-gradient(to right, #614385 0%, #92a9ea 51%, #614385 100%);*/
+background-color: #d7c8f5;
+margin: 10px;
+padding: 10px 20px;
+text-align: center;
+font-weight:500;
+font-size: 18px;
+font-family: verdana;
+transition: 0.5s;
+background-size: 200% auto;
+box-shadow: 0 0 10px #eee;
+color: hwb(278 0% 96%);
+text-decoration: none;
+display: inline-block;
+}
+.carousel-caption a:hover {
+background-position: right center;
+color: #70056e;
+}
+.carousel-inner .item{
+width:100%;
+transition: transform .2s ease-in-out;
+}
+.carousel-inner .item img {
+width:100%;
+/*max-width: 1250px;
+max-height: 500px;*/
+object-fit: cover;
+}

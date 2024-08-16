@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nav-main
+{
+    display: flex;
+    align-items:center;
+    padding: 20px;
+}
+.nav-main img{
+    width:15%;
+}
+.nav-sec
+{
+    float:right;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color:blueviolet
+}
+p{
+    color:blueviolet;
+}
+.contain{
+    max-width: 1300px;
+    margin:auto ;
+    padding-left: 10px;
+    padding-right: 0px;
+}

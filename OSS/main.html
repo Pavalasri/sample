@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ART SPOT</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .nav-main {
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed; 
+      top: 0; 
+      z-index: 1000; 
+      transition: box-shadow 0.3s; 
+    }
+
+    .nav-main.scrolled {
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    body {
+      padding-top: 80px; 
+	}
+
+    .nav-main img {
+      width: 13%;
+      height: auto;
+    }
+
+    .nav-sec ul {
+      display: flex;
+    }
+
+    .nav-sec ul li {
+      list-style-type: none;
+      margin-right: 20px;
+      display: flex;
+      font-family: serif;
+      align-items: center;
+    }
+
+    .nav-sec ul li a {
+      text-decoration: none;
+      font-family: serif;
+      font-size: 25px;
+      color: #070436;
+    }
+
+    .nav-sec ul li a:hover {
+      color: rgb(88, 70, 153);
+    }
+
+    .nav-sec ul li button {
+      border: none;
+      background-color: #c055cc;
+      border-radius: 20px;
+      padding: 10px;
+      color: #070436;
+      cursor: pointer;
+      background-image: linear-gradient(to right, #614385 0%, #516395 51%, #614385 100%);
+      margin: 10px;
+      margin-right: 10px;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 17px;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 12px #5e5a5a;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .nav-sec ul li button:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .carousel-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      text-align: center;
+    }
+
+    .carousel-caption h1 {
+      font-size: 60px;
+      font-family: serif;
+      margin: 0;
+    }
+
+    .carousel-caption p {
+      font-size: 24px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .carousel-caption a {
+      border: none;
+      background-color: #09000a;
+      border-radius: 10px;
+      padding: 10px;
+      color: #605adb;
+      cursor: pointer;
+      background-color: #d7c8f5;
+      margin: 10px;
+      padding: 10px 20px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 18px;
+      font-family: verdana;
+      transition: 0.5s;
+      background-size: 200% auto;
+      box-shadow: 0 0 10px #eee;
+      color: hwb(278 0% 96%);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .carousel-caption a:hover {
+      background-position: right center;
+      color: #70056e;
+    }
+
+    .carousel-inner .item {
+      width: 100%;
+      transition: transform .2s ease-in-out;
+    }
+
+    .carousel-inner .item img {
+      width: 100%;
+      object-fit: cover;
+    }
+	.about .col-lg-6{
+		padding: 0;
+	}
+  </style>
+</head>
+<body>
+  <nav class="nav-main">
+    <img src="artt.png">
+    <div class="nav-sec">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="login_signup/signupp.php">Sell Your Art</a></li>
+        <li><a href="login_signup/login.html"><button>Login</button></a></li>
+        <li><a href="login_signup/signupp.php"><button>Sign Up</button></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="containe">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="stickers/backphone1.png" alt="Phone Case">
+          <div class="carousel-caption">
+            <h1>Phone Case</h1>
+            <p>Empower your phone with elegance</p>
+            <a href="phonecases.html" class="info">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="stickers/backwall1.png" alt="Wallart">
+          <div class="carousel-caption">
+            <h1>Wall Art</h1>
+            <p>Timeless Beauty on Your Wall</p>
+            <a href="wallart.html" class="info">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="stickers/backsticker1.png" alt="Stickers">
+          <div class="carousel-caption">
+            <h1>Stickers</h1>
+            <p>Stick It With Style!!</p>
+            <a href="stickers.html" class="info">Shop Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+<div class="about">
+	<div class="container-fluid" >
+		<div class="row" style="background-color: #d5a6da;">
+			<div class="col-lg-6" style="padding: 120px;">
+				<h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Welcome to ArtSpot, a vibrant online marketplace where creativity meets everyday life. We believe in the power of art to transform spaces and bring joy to daily routines, which is why we've created a platform where talented artists can showcase their work on a variety of products.</h4>
+			</div>
+			<div class="col-lg-6">
+				<img src="image.jpg" alt="" width="100%"  >
+      </div>
+
+
+		</div>
+		<div class="row" >
+			<div class="col-lg-3" style="background: #8ad8d0; padding-top: 100px; height: 75vh;">
+         <h1 style="  transform: rotate(270deg);font-size:60px;">ABOUT US</h1>
+			</div>
+			<div class="col-lg-6" style="padding: 80px;">
+				<p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">At ArtSpot, our mission is to bridge the gap between art and utility. We offer a wide range of products, including wall art, phone cases, and stickers, all featuring unique designs by independent artists from around the world. Each item is crafted with care and attention to detail, ensuring that you receive high-quality products that are as durable as they are beautiful.
+				</p>
+					<p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">We are passionate about supporting artists and providing them with opportunities to share their creations with a broader audience. By purchasing from ArtSpot, you are not only enhancing your space with one-of-a-kind pieces but also supporting the artistic community.
+					</p><p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Join us in celebrating creativity and making art a part of your everyday life. Thank you for choosing ArtSpot. We look forward to bringing more beauty and inspiration into your world.</p>
+			</div>
+			<div class="col-lg-3" style="height: 75vh; background: #ffec58;"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<img src="image1.jpg" alt="" width="100%">
+			</div>
+			<div class="col-lg-6" style="height: 49vh; background: #eb9c9b;"></div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.nav-main');
+      if (window.scrollY > 0) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
